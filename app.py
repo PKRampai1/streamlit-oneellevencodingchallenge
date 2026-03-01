@@ -32,7 +32,7 @@ def gif_background(path: str, opacity: float = 0.6):
 # Call it with your file
 gif_background("test2.gif")
 
-st.set_page_config(page_title="OneElleven API Visualizer", layout="wide", page_icon="🎬")
+st.set_page_config(page_title="Bonus_Task OneElleven API Visualizer", layout="wide", page_icon="🎬")
 
 # ── STYLES ──
 st.markdown("""
@@ -111,7 +111,7 @@ st.markdown("""
     margin-bottom: 32px;
 ">
     <div>
-        <div style="color: white; font-size: 24px; font-weight: 700;">🎬 OneElleven</div>
+        <div style="color: white; font-size: 24px; font-weight: 700;">🎬 Bonus Challenge </div>
         <div style="color: rgba(255,255,255,0.6); font-size: 13px; margin-top: 2px;">API Visualizer</div>
     </div>
     <div style="color: rgba(255,255,255,0.5); font-size: 13px;">v1.0</div>
@@ -212,6 +212,6 @@ st.markdown("""
     font-size: 13px;
     border: 1px solid #2a2a45;
 ">
-    © 2026 OneElleven · API Visualizer
+    © 2026 CodingChallenge_PKRampai · API Visualizer
 </div>
 """, unsafe_allow_html=True)
