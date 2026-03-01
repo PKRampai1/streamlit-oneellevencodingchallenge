@@ -141,7 +141,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 # ── LOGIC ──
 if submit and (url_input or email_input):
-    url = f"{base_url}url={url_input}&email={email_input}"
+    url = f"{base_url}?url={url_input}&email={email_input}"
 
     with st.spinner("Fetching data..."):
         data = requests.post(url)
