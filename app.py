@@ -212,6 +212,6 @@ st.markdown("""
     font-size: 13px;
     border: 1px solid #2a2a45;
 ">
-    © 2026 CodingChallenge_PKRampai · API Visualizer
+    © 2026 BonusTask_OneEllevenCodingChallenge · API Visualizer
 </div>
 """, unsafe_allow_html=True)
