@@ -1,7 +1,11 @@
 import streamlit as st
 import requests
 import base64
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+base_url = os.getenv("SUPABASE_URL")
 
 def gif_background(path: str, opacity: float = 0.6):
     with open(path, "rb") as f:
@@ -137,7 +141,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 # ── LOGIC ──
 if submit and (url_input or email_input):
-    url = f"https://yhxzjyykdsfkdrmdxgho.supabase.co/functions/v1/application-task?url={url_input}&email={email_input}"
+    url = f"{base_url}url={url_input}&email={email_input}"
 
     with st.spinner("Fetching data..."):
         data = requests.post(url)
